@@ -1,7 +1,7 @@
 class CAritmetica
 {
     /*
-    * Operaciones aritéticas
+    * Operaciones aritméticas
     */
 	public static void main (String[] args)
 	{
@@ -26,5 +26,11 @@ class CAritmetica
 		//Cociente
 		resultado = dato1 / dato2 / dato3;
 		System.out.println(dato1 + " / " + dato2 + " / " + dato3 + " = " + resultado);
+		
+		resultado = dato1 + dato2 * dato3;
+		System.out.println(dato1 + " + " + dato2 + " * " + dato3 + " = " + resultado);
+		
+		resultado = dato1 * dato2 - dato3;
+		System.out.println(dato1 + " * " + dato2 + " - " + dato3 + " = " + resultado);
 	}
 }
