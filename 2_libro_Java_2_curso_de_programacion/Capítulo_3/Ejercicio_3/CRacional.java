@@ -38,19 +38,15 @@ class CRacional {
     
     public void Simplificar() {
         Integer divisor = 2;
-        Boolean divisible = true;
         
-        while(divisible) {
+        while(divisor <= 13) {
             if (Numerador % divisor == 0 & Denominador % divisor == 0) {
                 Numerador = Numerador / divisor;
                 Denominador = Denominador / divisor;
+                divisor = 2;
             }
             else {
                 divisor = divisor + 1;
-            }
-            
-            if (divisor == 13) {
-                divisible = false;
             }
         }
         
