@@ -39,7 +39,7 @@ class CRacional {
     public void Simplificar() {
         Integer divisor = 2;
         
-        while(divisor <= 13) {
+        while(divisor <= 12) {
             if (Numerador % divisor == 0 & Denominador % divisor == 0) {
                 Numerador = Numerador / divisor;
                 Denominador = Denominador / divisor;
