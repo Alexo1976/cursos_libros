@@ -1,35 +1,33 @@
-class CAritmetica
-{
-    /*
-    * Operaciones aritméticas
-    */
-	public static void main (String[] args)
-	{
+class CAritmetica {
+	/*
+	 * Operaciones aritméticas
+	 */
+	public static void main(String[] args) {
 		int dato1, dato2, dato3, resultado;
 
 		dato1 = 10;
 		dato2 = 20;
 		dato3 = 30;
 
-		//Suma
+		// Suma
 		resultado = resultado = dato1 + dato2 + dato3;
 		System.out.println(dato1 + " + " + dato2 + " + " + dato3 + " = " + resultado);
 
-		//Resta
+		// Resta
 		resultado = dato1 - dato2 - dato3;
 		System.out.println(dato1 + " - " + dato2 + " - " + dato3 + " = " + resultado);
 
-		//Producto
+		// Producto
 		resultado = dato1 * dato2 * dato3;
 		System.out.println(dato1 + " * " + dato2 + " + " + dato3 + " = " + resultado);
 
-		//Cociente
+		// Cociente
 		resultado = dato1 / dato2 / dato3;
 		System.out.println(dato1 + " / " + dato2 + " / " + dato3 + " = " + resultado);
-		
+
 		resultado = dato1 + dato2 * dato3;
 		System.out.println(dato1 + " + " + dato2 + " * " + dato3 + " = " + resultado);
-		
+
 		resultado = dato1 * dato2 - dato3;
 		System.out.println(dato1 + " * " + dato2 + " - " + dato3 + " = " + resultado);
 	}

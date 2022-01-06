@@ -3,7 +3,8 @@ class CCoche {
 	private boolean Motor = false, Acelerado = false;
 	int Velocidad = 0;
 
-	public CCoche(){}
+	public CCoche() {
+	}
 
 	public CCoche(String mar, String mod, String col) {
 		AsignarMarca(mar);
@@ -57,8 +58,7 @@ class CCoche {
 	public void ArrancarMotor() {
 		if (Motor == true) {
 			System.out.println("El motor ya esta arrancado.");
-		}
-		else {
+		} else {
 			Motor = true;
 			Velocidad = 0;
 			System.out.println("El motor del coche ha sido arrancado.");
@@ -68,30 +68,27 @@ class CCoche {
 	public void ApagarMotor() {
 		if (Motor == false) {
 			System.out.println("El motor ya esta apagado.");
-		}
-		else {
-			FrenarCoche();//Frenar el coche
-			Velocidad = 0; //Poner velocidad en 0
-			Motor = false; //Apagar el motor
+		} else {
+			FrenarCoche();// Frenar el coche
+			Velocidad = 0; // Poner velocidad en 0
+			Motor = false; // Apagar el motor
 			System.out.println("El motor del coche ha sido apagado.");
 		}
 	}
 
-	public void AumentarVelocidad()	{
-		if (Velocidad == 5)	{
+	public void AumentarVelocidad() {
+		if (Velocidad == 5) {
 			System.out.println("El motor ya esta en su maxima velocidad.");
-		}
-		else {
+		} else {
 			Velocidad = Velocidad + 1;
 			System.out.println("Se ha aumentado una velocidad, esta en velocidad: " + Velocidad);
 		}
 	}
 
 	public void DisminuirVelocidad() {
-		if (Velocidad == 0)	{
+		if (Velocidad == 0) {
 			System.out.println("El motor esta en neutro");
-		}
-		else {
+		} else {
 			Velocidad = Velocidad - 1;
 			System.out.println("Se ha disminuido una velocidad, esta en velocidad: " + Velocidad);
 		}
@@ -103,7 +100,7 @@ class CCoche {
 			return;
 		}
 
-		if (Velocidad == 0)	{
+		if (Velocidad == 0) {
 			System.out.println("No se puede acelerar el coche, esta en neutro.");
 			return;
 		}
@@ -122,15 +119,14 @@ class CCoche {
 			System.out.println("No se puede acelerar, el motor esta apagado.");
 			return;
 		}
-		
+
 		if (Acelerado == false) {
 			System.out.println("El coche ya está frenado.");
 			return;
 		}
-		
+
 		Velocidad = 0;
 		Acelerado = false;
 		System.out.println("El coche se ha frenado.");
 	}
 }
-

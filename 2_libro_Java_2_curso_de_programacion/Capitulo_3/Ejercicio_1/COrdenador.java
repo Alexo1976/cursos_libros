@@ -1,12 +1,12 @@
 class COrdenador {
-    // Atributos
+	// Atributos
 	String marca;
 	String procesador;
 	Integer peso;
 	boolean encendido = false;
 	boolean pantalla = false;
 	boolean aplicacion = false;
-	
+
 	// Métodos
 	public String ObtenerMarca() {
 		return marca;
@@ -15,19 +15,19 @@ class COrdenador {
 	public void EstablecerMarca(String ma) {
 		marca = ma;
 	}
-	
+
 	public String ObtenerProcesador() {
 		return procesador;
 	}
-	
+
 	public void EstablecerProcesador(String proc) {
 		procesador = proc;
 	}
-	
+
 	public int ObtenerPeso() {
 		return peso;
 	}
-	
+
 	public void EstablecerPeso(int pe) {
 		peso = pe;
 	}
@@ -35,8 +35,7 @@ class COrdenador {
 	public void EncenderOrdenador() {
 		if (encendido == true) {
 			System.out.println("El ordenador ya está encendido.");
-		}
-		else {
+		} else {
 			encendido = true;
 			pantalla = true;
 			System.out.println("El ordernador ha sido encendido.");
@@ -46,8 +45,7 @@ class COrdenador {
 	public void ApagarOrdenador() {
 		if (encendido == false) {
 			System.out.println("El ordenador ya está apagado.");
-		}
-		else {
+		} else {
 			aplicacion = false;
 			pantalla = false;
 			encendido = false;
@@ -58,8 +56,7 @@ class COrdenador {
 	public void EncenderPantalla() {
 		if (pantalla == true) {
 			System.out.println("La pantalla ya está encendida.");
-		}
-		else {
+		} else {
 			pantalla = true;
 			System.out.println("La pantalla ha sido encendida.");
 		}
@@ -68,8 +65,7 @@ class COrdenador {
 	public void ApagarPantalla() {
 		if (pantalla == false) {
 			System.out.println("La pantalla ya está apagada.");
-		}
-		else {
+		} else {
 			pantalla = false;
 			System.out.println("La pantalla ha sido apagada.");
 		}
@@ -78,18 +74,16 @@ class COrdenador {
 	public void CargarAplicacion() {
 		if (aplicacion == true) {
 			System.out.println("La aplicacion ya se está ejecutando.");
-		}
-		else {
+		} else {
 			aplicacion = true;
 			System.out.println("La aplicacion ha sido iniciada.");
 		}
 	}
-	
+
 	public void CerrarAplicacion() {
 		if (aplicacion == false) {
 			System.out.println("La aplicacion ya está cerrada.");
-		}
-		else {
+		} else {
 			aplicacion = false;
 			System.out.println("La aplicacion ha sido cerrada.");
 		}
@@ -100,29 +94,25 @@ class COrdenador {
 		System.out.print("\nMarca: " + marca);
 		System.out.print("\nProcesador: " + procesador);
 		System.out.print("\nPeso: " + peso + " kg.");
-		
-		if (aplicacion == true)	{
+
+		if (aplicacion == true) {
 			System.out.print("\nLa aplicacion ha sido cargada y se está ejecutando.");
-		}
-		else {
+		} else {
 			System.out.print("\nLa aplicacion no se está ejecutando.");
 		}
 
 		if (pantalla == true) {
 			System.out.print("\nLa pantalla está encendida.");
-		}
-		else {
+		} else {
 			System.out.print("\nLa pantalla está apagada.");
 		}
 
 		if (encendido == true) {
 			System.out.print("\nEl ordenador está encendido.");
-		}
-		else {
+		} else {
 			System.out.print("\nEl ordernador está apagado.");
 		}
-		
+
 		System.out.print("\n----\n");
 	}
 }
-
