@@ -5,7 +5,7 @@ Proceso Condicional_Si_Entonces_Sino
 	ESCRIBIR 'La resta de ', Numero1, ' entre 2 es ', Numero1 % 2;
 	
 	ESCRIBIR '¿Es par?';
-	ESCRIBIR Numero1%2 = 0;
+	//ESCRIBIR Numero1%2 = 0;
 	
 	SI Numero1 %2 = 0 ENTONCES
 		ESCRIBIR Numero1, ' es par.';

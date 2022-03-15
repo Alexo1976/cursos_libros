@@ -1,19 +1,17 @@
 Proceso Operadores_Algebraicos
-	
 	// Operadores algebraicos
-	Definir A, B como Enteros;
+	DEFINIR A, B COMO ENTEROS;
 	A <- 5;
 	
-	Escribir A+5;
-	Escribir A-5;
-	Escribir A*5;
-	Escribir A/5;
-	Escribir A^5;
-	Escribir A%5;
+	ESCRIBIR A+5;
+	ESCRIBIR A-5;
+	ESCRIBIR A*5;
+	ESCRIBIR A/5;
+	ESCRIBIR A^5;
+	ESCRIBIR A%5;
 	
 	B <- 2;
 	
-	Escribir A*5+10/B;
-	Escribir 2*A^2+10*A+B;
-
+	ESCRIBIR A*5+10/B;
+	ESCRIBIR 2*A^2+10*A+B;
 FinProceso

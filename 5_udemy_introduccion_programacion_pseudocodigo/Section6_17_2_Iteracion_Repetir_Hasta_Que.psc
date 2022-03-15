@@ -1,9 +1,9 @@
 Proceso Iteracion_Repetir
 	DEFINIR Contador COMO ENTERO;
-	COntador <- 0;
+	Contador <- 0;
 	
-	Repetir
+	REPETIR
 		ESCRIBIR "Repetición del reptir ", Contador;
 		Contador <- Contador + 1;
-	Hasta Que Contador = 10;
+	HASTA QUE Contador = 10;
 FinProceso

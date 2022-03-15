@@ -3,23 +3,21 @@ Proceso Iteracion_Para
 	
 	// Primer PARA
 	PARA Contador1 <- 0 HASTA 9
-		
 		// Segundo PARA
 		PARA Contador2 <- 0 HASTA 9
 			SI Contador1 = 0 O Contador1 = 9 O Contador2 = 0 O Contador2 = 9 O Contador1 = Contador2 O Contador1 + Contador2 = 9 ENTONCES
 				ESCRIBIR SIN SALTAR Contador1, Contador2 ' ';	
-			Sino
+			SINO
 				ESCRIBIR SIN SALTAR '   ';
-			FinSi
-		FinPara
+			FINSI
+		FINPARA
 		
-		ESCRIBIR '';
-		
+		ESCRIBIR '';		
 	FinPara
 	
 	DibujarCajon(1, 1);	
 	DibujarCajon(2, 4);	
-	DibujarCajon(3, 3);	
+	DibujarCajon(3, 3);
 	DibujarCajon(8, 4);	
 	DibujarCajon(5, 5);	
 	
@@ -27,7 +25,7 @@ Proceso Iteracion_Para
 	// PseInt detectará que se debe decrementar si <desde> es mayor que el número <hasta>
 	PARA i <- 9 HASTA 0
 		ESCRIBIR i;
-	FinPara
+	FINPARA
 FinProceso
 
 SUBPROCESO DibujarCajon(b, h)
@@ -36,8 +34,8 @@ SUBPROCESO DibujarCajon(b, h)
 	PARA i <- 0 HASTA b-1
 		PARA j <- 0 HASTA h-1
 			ESCRIBIR SIN SALTAR '* ';
-		FinPara
+		FINPARA
 		
 		ESCRIBIR '';
-	FinPara
+	FINPARA
 FinSubProceso

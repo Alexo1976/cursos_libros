@@ -8,7 +8,7 @@ Proceso Condicional_Segun
 	ESCRIBIR SIN SALTAR 'Escribe el número B';
 	LEER NumeroB;
 	
-	Escribir 'Operaciones disponibles:';
+	ESCRIBIR 'Operaciones disponibles:';
 	ESCRIBIR 'S: Suma';
 	ESCRIBIR 'R: Resta';
 	ESCRIBIR 'M: Multiplicación';
@@ -34,8 +34,7 @@ Proceso Condicional_Segun
 			ESCRIBIR 'Has elegido la multiplicación';
 			ESCRIBIR NumeroA, ' * ', NumeroB;
 			ESCRIBIR NumeroA * NumeroB;
-		De Otro Modo:
+		DE OTRO MODO:
 			ESCRIBIR 'No has elegido la operación correcta';
-	FINSEGUN
-	
+	FINSEGUN	
 FinProceso

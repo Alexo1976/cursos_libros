@@ -1,21 +1,19 @@
 Proceso Operadores_Relacionales
-	
 	// Operadores relacionales/comparativos
-	Definir A, B como Enteros;
+	DEFINIR A, B COMO ENTEROS;
 	A <- 5;
 	B <- 2;
 	
-	Escribir A = B;
-	Escribir A <> B;
-	Escribir A < B;
-	Escribir A > B;
-	Escribir A <= B;
-	Escribir A >= B;
+	ESCRIBIR A = B;
+	ESCRIBIR A <> B;
+	ESCRIBIR A < B;
+	ESCRIBIR A > B;
+	ESCRIBIR A <= B;
+	ESCRIBIR A >= B;
 	
-	Escribir VERDADERO = VERDADERO;
-	Escribir FALSO <> VERDADERO;
+	ESCRIBIR VERDADERO = VERDADERO;
+	ESCRIBIR FALSO <> VERDADERO;
 	
-	Escribir 'A' = 'B';
-	Escribir 'A' <> 'B';
-	
+	ESCRIBIR 'A' = 'B';
+	ESCRIBIR 'A' <> 'B';
 FinProceso
